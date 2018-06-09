@@ -1,0 +1,34 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/details/details",
+    "pages/catalog/catalog",
+    "pages/user/user",
+    "pages/course/course",
+    "pages/reply/reply"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "NKU选课助手",
+    "navigationBarTextStyle": "black",
+    "onReachBottomDistance": 50
+  },
+  "tabBar": {
+    "selectedColor": "#1296db",
+    "list": [
+      {
+        "pagePath": "pages/catalog/catalog",
+        "iconPath": "images/course.png",
+        "text": "课程列表",
+        "selectedIconPath": "images/course2.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "iconPath": "images/user.png",
+        "text": "个人信息",
+        "selectedIconPath": "images/user2.png"
+      }
+    ]
+  }
+}

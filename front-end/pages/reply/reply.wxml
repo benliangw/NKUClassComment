@@ -1,0 +1,27 @@
+<view>
+  <view class="card" wx:for="{{comment_list}}" wx:for-index="itemIndex">
+      <view class='title'>
+          <text class='classname'>{{item.comment_class_name}}</text>
+          <label>匿名：</label>
+          <switch checked='{{item.comment_annoy}}' bindchange='setAnnoy' id="{{item.comment_id}}"/>
+      </view>
+      <view bindtap="menuOut"  id="{{item.comment_id}}">
+        <view>
+            <text class="para">{{item.comment_content}}</text>
+        </view>
+        <view class='bottom'>
+              <text class="time">{{item.format_time}}</text>
+              <text class="star">评分：{{item.comment_score}}分</text>
+        </view>
+      </view>
+  </view>
+  <loading hidden="{{hideloading}}" bindchange="loadingChange">加载中...</loading>
+
+  <view class="commodity_screen" bindtap="hideModal" wx:if="{{showModalStatus}}"></view>
+  <view animation="{{animationData}}" class="commodity_attr_box" wx:if="{{showModalStatus}}">
+      <button  bindtap='look' class='button'>查看</button>
+      <button  bindtap='modify' class='button'>修改</button>
+      <button  bindtap='deletee' class='delete-button'>删除</button>
+      <button  bindtap='cancel' class='button'>取消</button>
+  </view>
+</view>

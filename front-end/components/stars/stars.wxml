@@ -1,0 +1,10 @@
+<view class="stars-panel">
+
+<block wx:for="{{stars}}">
+  <image class="star-image" src="{{key > item ?(key-item <= 0.5?halfSrc:selectedSrc) : normalSrc}}">
+    <!-- <view class="item" style="left:0rpx" data-key="{{item+0.5}}" bindtap="selectLeft"></view>
+    <view class="item" style="left:75rpx" data-key="{{item+1}}" bindtap="selectRight"></view> -->
+  </image>
+</block>
+<text class="score" >{{key==0?'无人评':key}}分</text>
+</view>

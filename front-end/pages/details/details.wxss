@@ -1,0 +1,44 @@
+/* pages/details/details.wxss */
+
+@import '/styles/word.wxss';
+
+.detail-page-panel{
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin-top: 0;
+  height: 1200rpx;
+  width: 750rpx;
+}
+.course-info {
+  height: 400rpx;
+  /* width: 100%; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 20rpx 28rpx;
+  padding: 40rpx 32rpx;
+  background-color: #fff;
+}
+
+.score-info{
+  display: flex;
+  justify-content: space-between;
+}
+.name{
+  margin-left:-100rpx;
+  font-size:38rpx;
+}
+.content{
+  word-break: break-all;
+  font-size: 30rpx;
+  margin-left:0;
+}
+.card {
+  background: #fff;
+  margin: 20rpx 28rpx;
+  padding: 40rpx 32rpx;
+  border-radius: 2%;
+  width: auto;
+  height: auto;
+}

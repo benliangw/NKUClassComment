@@ -1,0 +1,56 @@
+<!--pages/details/details.wxml-->
+<view>
+  <view style='height: 100%;'>
+    <view class="course-info">
+      <view>
+        <text class='title'>课程名：</text>
+        <text class='title'>{{courseInfo.class_name}}</text>
+      </view>
+      <view>
+        <text class='title'>教师：</text>
+        <text class='title'>{{courseInfo.class_teacher}}</text>
+      </view>
+      <component-stars key="{{aveScore}}"></component-stars>
+
+      <view class='score-info'>
+        <view style='display:inline;'>
+          <text class='title'>总选课人数：</text>
+          <text class='title'>{{classInfo.num_total}}</text>
+        </view>
+        <view style='display:inline;'>
+          <text class='title'>最高分：</text>
+          <text class='title'>{{classInfo.score_max}}</text>
+        </view>
+      </view>
+      <view class='score-info'>
+        <view style='display:inline;'>
+          <text class='title'>90以上人数：</text>
+          <text class='title'>{{classInfo.num_above90}}</text>
+        </view>
+        <view style='display:inline;'>
+          <text class='title'>最低分：</text>
+          <text class='title'>{{classInfo.score_min}}</text>
+        </view>
+      </view>
+      <view class='score-info'>
+        <view style='display:inline;'>
+          <text class='title'>不及格人数：</text>
+          <text class='title'>{{classInfo.num_failed}}</text>
+        </view>
+
+        <view style='display:inline;'>
+          <text class='title'>平均分：</text>
+          <text class='title'>{{classInfo.score_mean}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <scroll-view class='card entry'>
+    <view class="name">
+      <text>{{comment.comment_annoy?'匿名用户':comment.comment_user_name}}</text>
+      <text>{{comment.format_time}}</text>
+    </view>
+    <text class='content'>{{comment.comment_content}}</text>
+  </scroll-view>
+</view>

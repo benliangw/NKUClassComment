@@ -1,0 +1,118 @@
+.entry {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    /* max-width: 640px; */
+    padding: 0 16px;
+    line-height: 2;
+    color: #424b50;
+    word-wrap: break-word;
+    font-size: 16px;
+    font-family: "Helvetica Neue", Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", "Microsoft YaHei", "Wenquanyi Micro Hei", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    counter-reset: entry825h2 entry825h3 entry825h4 entry825h5 entry825h6
+}
+
+.entry view,
+.entry scroll-view,
+.entry text,
+.entry blockquote,
+{
+    margin: 0;
+    padding: 0;
+    margin-top: 16px;
+    margin-bottom: 16px
+}
+
+.entry view:first-child,
+.entry scroll-view:first-child,
+.entry text:first-child,
+{
+    margin-top: 0
+}
+
+.entry view:last-child,
+.entry scroll-view:last-child,
+.entry text:last-child,
+{
+    margin-bottom: 0
+}
+
+.entry h1,
+.entry h2,
+.entry h3,
+.entry h4,
+.entry h5,
+.entry h6 {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0
+}
+
+.entry h1:first-child,
+.entry h2:first-child,
+.entry h3:first-child,
+.entry h4:first-child,
+.entry h5:first-child,
+.entry h6:first-child {
+    margin-top: 0
+}
+
+.entry>h3,
+.entry>h4,
+.entry>h5,
+.entry>h6 {
+    margin-top: 32px
+}
+
+.entry>h1,
+.entry>h2 {
+    margin-top: 64px
+}
+
+.entry h1,
+.entry h2,
+.entry h3,
+.entry h4,
+.entry h5,
+.entry h6 {
+    font-weight: inherit;
+    color: #424b50;
+    background-color: transparent
+}
+
+.entry h1 {
+    font-size: 28px;
+    line-height: 48px;
+    text-align: center
+}
+
+.entry h2 {
+    font-size: 21px;
+    line-height: 32px;
+    text-align: left
+}
+
+.entry h3 {
+    font-size: 18px;
+    line-height: 32px;
+    text-align: left
+}
+
+.entry h4,
+.entry h5,
+.entry h6 {
+    line-height: 32px;
+    font-size: 16px;
+    text-align: left
+}
+
+.entry text:before,
+.entry view:before, 
+.entry scroll-view::before{
+    content: '\3000\3000';
+    display: inline
+}

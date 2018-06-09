@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "component-stars": "/components/stars/stars",
+    "component-click-stars": "/components/clickstars/clickstars"
+  }
+}

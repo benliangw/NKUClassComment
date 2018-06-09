@@ -1,0 +1,36 @@
+.login-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100vh; 
+  align-items:  center;
+}
+
+.nku-image{
+  width: 350rpx;
+  height: 350rpx;
+  border-radius: 50%;
+}
+
+.input-panel{
+  width: 80%;
+  margin-bottom: 200rpx; 
+}
+
+.user-info-input{
+  height:3rpx;
+  min-height:2.58823529em;
+  line-height:2.58823529em;
+  margin:20rpx -10rpx;
+  background-color: #fff;
+  padding: 7rpx 20rpx;
+}
+.login-btn{
+  width: 100%;
+  margin-top: 100rpx;
+}
+.label {
+  color:#999;
+  font-size:30rpx;
+  margin-bottom: 30rpx;
+}

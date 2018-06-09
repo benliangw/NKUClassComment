@@ -1,0 +1,19 @@
+<view class="user-container">
+  <image src='/images/nankai.png' class='nku-image'></image>
+  <view>
+    <view class='text'>
+        <text class='label' decode="{{true}}">学号:&nbsp;&nbsp;</text>
+        <text class='user-text'>{{userInfo.userId}}</text>
+    </view>
+    <view class='text'>
+        <text class='label' decode="{{true}}">昵称:&nbsp;&nbsp;</text>
+        <text class='user-text'>{{userInfo.username}}</text>
+        <text class='modify' bindtap="modify" wx:if="{{userInfo.canmodify}}">修改</text>
+    </view>
+  </view>
+  <modal hidden="{{hiddenmodify}}" title="请输入新昵称" confirm-text="确认" cancel-text="取消" bindcancel="cancel" bindconfirm="confirm">  
+    <input type='text'bindinput="input" placeholder="请输入内容,每个账号仅可修改一次"/>  
+  </modal>
+  <button bindtap='checkMyReply' class='reply-btn'>查看我的回复</button>
+  <button bindtap='logoutButtonClick' type='warn' class='logout-btn'>注销</button>
+</view>

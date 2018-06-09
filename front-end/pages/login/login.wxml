@@ -1,0 +1,16 @@
+<view class="login-container">
+  <image src='/images/nankai.png' class='nku-image'></image>
+  <form class='input-panel' bindsubmit='loginButtonClick' bindreset='loginReset'>
+    <view>
+        <text class='label'>学号</text>
+        <input class='user-info-input' placeholder='请输入学号' name='stuId'></input>
+    </view>
+
+    <view>
+        <text class='label'>密码</text>
+        <input password='true' class='user-info-input' placeholder='请输入密码' name='password'></input>
+    </view>
+    <button  formType='submit' type='primary' class='login-btn'>登录</button>
+  </form>
+  
+</view>

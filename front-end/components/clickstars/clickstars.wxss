@@ -1,0 +1,5 @@
+@import '/styles/stars.wxss';
+
+.stars-panel{
+  margin: 20rpx 0;
+}

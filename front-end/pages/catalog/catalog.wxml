@@ -1,0 +1,28 @@
+<view>
+  <view class="search-box">
+    <view class="flex-wrp">
+      <view class="i-user-head flex-item" bindtap="showMine">
+      </view>
+      <view class="mysearchcss search-frame flex-item">
+        <image class="search-icon" src="/images/query.png" bindtap="searchTap"></image>
+        <input maxlength="15" confirm-type="search" placeholder="输入关键词，例：软工 师文轩" value="{{searchValue}}" placeholder-class="search-placeholder" bindinput="searchInput" bindconfirm="searchTap" />
+      </view>
+      <view class="search-button flex-item" bindtap="searchTap">搜索</view>
+    </view>
+  </view>
+  <view class="content" >
+    <view class="grid course-panel">
+      <view class="card" wx:for="{{courseList}}" wx:for-index="itemIndex" bindtap="courseClick" id="{{item.class_id}}">
+        <view>
+          <text class="para">{{item.class_name}}</text>
+        </view>
+        <view class='bottom'>
+          <text class="time">{{item.class_teacher}}</text>
+          <text class="star">开课单位：{{item.class_dept}}</text>
+        </view>
+      </view>
+    </view>
+
+
+  </view>
+</view>

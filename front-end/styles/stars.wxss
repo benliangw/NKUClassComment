@@ -1,0 +1,21 @@
+.star-image {
+  /* position: relative; */
+  /* top: 20rpx; */
+  width: 60rpx;
+  height: 60rpx;
+  src: "../../images/normal.png";
+}
+
+/* .item {
+  position: absolute;
+   top: 20rpx;
+  width: 40rpx;
+  height: 80rpx; 
+} */
+
+.score{
+  /* width: 100%; */
+  margin-left:50rpx; 
+  font-size: 40rpx;
+  margin-bottom: 10rpx;
+}
